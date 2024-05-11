@@ -1,8 +1,10 @@
 package com.example.AlBD.repository;
-import com.example.AlBD.Dish;
+import com.example.AlBD.dto.Dish;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface DishRepository extends JpaRepository<Dish, Integer> {
+@Repository
+public interface DishRepository extends CommonRepository<Dish>{
 
 
 }

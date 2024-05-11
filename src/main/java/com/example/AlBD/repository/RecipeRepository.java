@@ -1,8 +1,10 @@
 package com.example.AlBD.repository;
-import com.example.AlBD.Recipe;
+import com.example.AlBD.dto.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface RecipeRepository extends JpaRepository<Recipe, Integer> {
+@Repository
+public interface RecipeRepository extends CommonRepository<Recipe> {
 
 
 }

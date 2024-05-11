@@ -1,8 +1,7 @@
 package com.example.AlBD.repository;
-import com.example.AlBD.CookingWay;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.AlBD.dto.CookingWay;
+import org.springframework.stereotype.Repository;
 
-public interface CookingWayRepository extends JpaRepository<CookingWay, Integer> {
-
-
+@Repository
+public interface CookingWayRepository extends CommonRepository<CookingWay> {
 }

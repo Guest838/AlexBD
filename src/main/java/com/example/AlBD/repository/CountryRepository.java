@@ -1,9 +1,11 @@
 package com.example.AlBD.repository;
 
-import com.example.AlBD.Country;
+import com.example.AlBD.dto.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CountryRepository extends JpaRepository<Country, Integer> {
+@Repository
+public interface CountryRepository extends CommonRepository<Country> {
 
 
 }
